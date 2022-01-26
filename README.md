@@ -1,26 +1,26 @@
 # Welcome to Remix!
 
-- [Remix Docs](https://remix.run/docs)
+- [Remix 文档](https://remix.run/docs)
 
-## Development
+## 开发
 
-From your terminal:
+在终端中运行:
 
 ```sh
 npm run dev
 ```
 
-This starts your app in development mode, rebuilding assets on file changes.
+这个命令会以开发模式启动你的应用，当源文件修改时会自动重新构建。
 
-## Deployment
+## 部署
 
-First, build your app for production:
+首先，以生产模式构建你的应用：
 
 ```sh
 npm run build
 ```
 
-Then run the app in production mode:
+然后以生产模式启动应用：
 
 ```sh
 npm start
@@ -28,26 +28,26 @@ npm start
 
 Now you'll need to pick a host to deploy it to.
 
-### DIY
+### 自定义
 
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+如果你熟悉 node 应用部署，内置的 Remix 应用服务器是可以在生产环境使用的。
 
-Make sure to deploy the output of `remix build`
+确保部署 `remix build` 命令执行的产物。
 
 - `build/`
 - `public/build/`
 
-### Using a Template
+### 使用模版
 
-When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over your `app/` folder to the new project that's pre-configured for your target server.
+当你运行 `npx create-remix@latest`，会有几种选择来任你挑选。你可以重新运行一次命令来创建一个新项目，然后把 `app/` 目录复制到一个为你的服务器预设的新项目。
 
 ```sh
 cd ..
-# create a new project, and pick a pre-configured host
+# 创建一个新项目, 选择一个事件配置好的主机
 npx create-remix@latest
 cd my-new-remix-app
-# remove the new project's app (not the old one!)
+# 删除新项目的app目录 (不是老项目!)
 rm -rf app
-# copy your app over
+# 复制 app 文件夹
 cp -R ../my-old-remix-app/app app
 ```
